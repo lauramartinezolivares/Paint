@@ -1,0 +1,90 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  height: 100%;
+}
+
+.toolbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  flex-grow: 1;
+  height: 99.5%;
+  border: 1px solid cadetblue;
+  margin-left: 1.5%;
+  margin-right: 0.5%;
+  background-color: yellow;
+}
+
+.line1 {
+  width: 112px;
+  height: 4px;
+  border-bottom: 1px solid black;
+  position: absolute;
+}
+
+.line2 {
+  width: 112px;
+  height: 4px;
+  border-bottom: 2px solid black;
+  position: absolute;
+}
+
+.line3 {
+  width: 112px;
+  height: 4px;
+  border-bottom: 4px solid black;
+  position: absolute;
+}
+
+.line4 {
+  width: 112px;
+  height: 4px;
+  border-bottom: 6px solid black;
+  position: absolute;
+}
+
+.erase {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 2px solid;
+}
+
+.undo_redo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.undo {
+  display: flex;
+  flex-grow: 1;
+  font-size: 20px;
+}
+
+.redo {
+  display: flex;
+  flex-grow: 1;
+}
+
+.canvas {
+  flex-grow: 5;
+}
+
+#can {
+  border: 2px solid darkblue;
+}

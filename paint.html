@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+  <script src="js/basic_functions.js"></script>
+
+</head>
+
+<body onload="init()">
+  <div class="container">
+
+    <div class="toolbox">
+      <label for="colorWell">Color:</label>
+      <input type="color" value="#000000" id="colorWell">
+
+      <div class="undo_redo">
+        <div class="undo">
+        </div>
+        <div class="redo">
+        </div>
+      </div>
+      <div class="thickness_selector">
+        <div class="line1" id="1" onclick="thickness(this)"></div>
+        <br>
+        <div class="line2" id="2" onclick="thickness(this)"></div>
+        <br>
+        <div class="line3" id="3" onclick="thickness(this)"></div>
+        <br>
+        <div class="line4" id="4" onclick="thickness(this)"></div>
+      </div>
+      <div class="erase-box">Eraser
+        <div class="erase" id="white" onclick="color(this)"></div>
+      </div>
+      <div class="clear">
+        <input type="button" value="clear" id="clr" size="23" onclick="eraseall()" style="position:absolute;top:55%;left:15%;">
+      </div>
+    </div>
+    <div class="canvas">
+      <canvas id="can" class="canvas">
+
+      </canvas>
+    </div>
+
+</body>
+
+</html>
